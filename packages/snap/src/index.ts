@@ -49,13 +49,17 @@ export const onTransaction: OnTransactionHandler = async ({ transaction }) => {
   return {
     content: panel([
       heading('Transaction insights snap'),
+      // text(
+      //   `As set up, you are paying **${JSON.stringify(
+      //     transaction,
+      //   )}** in gas fees for this transaction.`,
+      // ),
       text(
-        `As set up, you are paying **${JSON.stringify(
-          transaction,
-        )}** in gas fees for this transaction.`,
+        'Look at your transaction insights in a visual form by clicking the below link',
       ),
-
-      copyable(`https://chat.openai.com/from=${transaction.from}`),
+      copyable(
+        `https://ascai.vercel.app/contract-details/${transaction.from}/${transaction.to}/${transaction.data}`,
+      ),
     ]),
   };
 };
