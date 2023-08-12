@@ -41,9 +41,9 @@ const theme = {
 export const light: DefaultTheme = {
   colors: {
     background: {
-      default: '#FFFFFF',
+      default: '#1c2024',
       alternative: '#F2F4F6',
-      inverse: '#141618',
+      inverse: '#ffffff',
     },
     icon: {
       default: '#141618',
@@ -53,17 +53,17 @@ export const light: DefaultTheme = {
       default: '#24272A',
       muted: '#6A737D',
       alternative: '#535A61',
-      inverse: '#FFFFFF',
+      inverse: '#1c2024',
     },
     border: {
       default: '#BBC0C5',
     },
     primary: {
       default: '#6F4CFF',
-      inverse: '#FFFFFF',
+      inverse: '#1c2024',
     },
     card: {
-      default: '#FFFFFF',
+      default: '#1c2024',
     },
     error: {
       default: '#d73a49',
@@ -82,15 +82,15 @@ export const dark: DefaultTheme = {
     background: {
       default: '#24272A',
       alternative: '#141618',
-      inverse: '#FFFFFF',
+      inverse: '#1c2024',
     },
     icon: {
-      default: '#FFFFFF',
+      default: '#1c2024',
       alternative: '#BBC0C5',
     },
     text: {
-      default: '#FFFFFF',
-      muted: '#FFFFFF',
+      default: '#1c2024',
+      muted: '#1c2024',
       alternative: '#D6D9DC',
       inverse: '#24272A',
     },
@@ -99,7 +99,7 @@ export const dark: DefaultTheme = {
     },
     primary: {
       default: '#6F4CFF',
-      inverse: '#FFFFFF',
+      inverse: '#1c2024',
     },
     card: {
       default: '#141618',

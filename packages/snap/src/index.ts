@@ -46,6 +46,8 @@ export const onTransaction: OnTransactionHandler = async ({ transaction }) => {
   // }
 
   // Display percentage of gas fees in the transaction insights UI.
+  const chainId = await ethereum.request({ method: 'eth_chainId' });
+
   return {
     content: panel([
       heading('Transaction insights snap'),
@@ -58,7 +60,7 @@ export const onTransaction: OnTransactionHandler = async ({ transaction }) => {
         'Look at your transaction insights in a visual form by clicking the below link',
       ),
       copyable(
-        `https://ascai.vercel.app/contract-details/${transaction.from}/${transaction.to}/${transaction.data}`,
+        `https://ascai.vercel.app/contract-details/${chainId}/${transaction.from}/${transaction.to}/${transaction.value}/${transaction.data}`,
       ),
     ]),
   };

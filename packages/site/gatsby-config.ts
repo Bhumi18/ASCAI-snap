@@ -13,7 +13,7 @@ const config: GatsbyConfig = {
         name: 'Template Snap',
         icon: 'src/assets/logo.svg',
         theme_color: '#6F4CFF',
-        background_color: '#FFFFFF',
+        background_color: '#000000',
         display: 'standalone',
       },
     },

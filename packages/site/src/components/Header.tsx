@@ -5,6 +5,8 @@ import { connectSnap, getThemePreference, getSnap } from '../utils';
 import { HeaderButtons } from './Buttons';
 import { SnapLogo } from './SnapLogo';
 import { Toggle } from './Toggle';
+import logo1 from "../assets/logo1.png";
+
 
 const HeaderWrapper = styled.header`
   display: flex;
@@ -62,14 +64,14 @@ export const Header = ({
   return (
     <HeaderWrapper>
       <LogoWrapper>
-        <SnapLogo color={theme.colors.icon.default} size={36} />
-        <Title>template-snap</Title>
+        {/* <SnapLogo color={theme.colors.icon.default} size={36} /> */}
+        <img src={logo1} alt="" style={{ width: "200px" }} />
       </LogoWrapper>
       <RightContainer>
-        <Toggle
+        {/* <Toggle
           onToggle={handleToggleClick}
           defaultChecked={getThemePreference()}
-        />
+        /> */}
         <HeaderButtons state={state} onConnectClick={handleConnectClick} />
       </RightContainer>
     </HeaderWrapper>

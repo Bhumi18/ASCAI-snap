@@ -129,10 +129,13 @@ const Index = () => {
   return (
     <Container>
       <Heading>
-        Welcome to <Span>template-snap</Span>
+        <h1 style={{fontSize: "5rem", letterSpacing: "2px", lineHeight: "90px", color: "#ffffff", fontFamily: "BalooBhai2",
+  margin: "0", background: "linear-gradient(90deg, rgba(222, 255, 2, 0.8883928571428571) 13%, rgba(0, 255, 255, 0.896796218487395) 100%)",
+  backgroundClip: "text", WebkitBackgroundClip: "text", color: "transparent"}}>Welcome to ASCAI - <span style={{fontSize:"5rem", color: "white" }}>Snap</span></h1>
+        {/* Welcome to <Span>ASCAI-snap</Span> */}
       </Heading>
-      <Subtitle>
-        Get started by editing <code>src/index.ts</code>
+      <Subtitle style={{color:"white"}}>
+        Get started by installing snap.
       </Subtitle>
       <CardContainer>
         {state.error && (
@@ -172,7 +175,16 @@ const Index = () => {
             content={{
               title: 'Reconnect',
               description:
-                'While connected to a local running snap this button will always be displayed in order to update the snap if a change is made.',
+              (
+                <div>
+                  <p>
+                    - By re-establishing the connection to your snap, you'll be able to install the most recent updates for the snap application.
+                  </p>
+                  <p>
+                    - Utilizing this feature will enable you to view detailed transaction insights for each transaction you wish to carry out.
+                  </p>
+                </div>
+              ),
               button: (
                 <ReconnectButton
                   onClick={handleConnectClick}
