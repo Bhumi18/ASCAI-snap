@@ -159,7 +159,7 @@ const Index = () => {
             content={{
               title: 'Connect',
               description:
-                'Get started by connecting to and installing the example snap.',
+                'Get started by connecting to and installing the ASCAI snap.',
               button: (
                 <ConnectButton
                   onClick={handleConnectClick}
