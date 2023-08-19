@@ -10,20 +10,15 @@ const Link = styled.a`
   align-items: center;
   justify-content: center;
   font-size: ${(props) => props.theme.fontSizes.small};
-  border-radius: ${(props) => props.theme.radii.button};
-  border: 1px solid ${(props) => props.theme.colors.background.inverse};
-  background-color: ${(props) => props.theme.colors.background.inverse};
-  color: ${(props) => props.theme.colors.text.inverse};
   text-decoration: none;
   font-weight: bold;
   padding: 1rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-
-  &:hover {
-    background-color: transparent;
-    border: 1px solid ${(props) => props.theme.colors.background.inverse};
-  }
+  background: #ffffff1f !;
+  border: 1px solid #deff02;
+  border-radius: 15px;
+  color: #deff02;
 
   ${({ theme }) => theme.mediaQueries.small} {
     width: 100%;
@@ -34,7 +29,11 @@ const Link = styled.a`
 const Button = styled.button`
   display: flex;
   align-self: flex-start;
+  background: #ffffff1f !mportant;
+  border: 1px solid #deff02;
+  border-radius: 15px;
   align-items: center;
+  color: #deff02;
   justify-content: center;
   margin-top: auto;
   ${({ theme }) => theme.mediaQueries.small} {
@@ -52,12 +51,12 @@ const ConnectedContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-size: ${(props) => props.theme.fontSizes.small};
-  border-radius: ${(props) => props.theme.radii.button};
-  border: 1px solid ${(props) => props.theme.colors.background.inverse};
-  background-color: ${(props) => props.theme.colors.background.inverse};
-  color: ${(props) => props.theme.colors.text.inverse};
   font-weight: bold;
   padding: 1.2rem;
+  background: #ffffff1f;
+  border: 1px solid #deff02;
+  border-radius: 15px;
+  color: #deff02;
 `;
 
 const ConnectedIndicator = styled.div`
@@ -65,7 +64,8 @@ const ConnectedIndicator = styled.div`
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: green;
+  background: #ffffff1f;
+  color: #deff02;
 `;
 
 export const InstallFlaskButton = () => (
