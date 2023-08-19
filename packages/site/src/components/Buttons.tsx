@@ -23,7 +23,6 @@ const Link = styled.a`
   &:hover {
     background-color: transparent;
     border: 1px solid ${(props) => props.theme.colors.background.inverse};
-    color: ${(props) => props.theme.colors.text.default};
   }
 
   ${({ theme }) => theme.mediaQueries.small} {
